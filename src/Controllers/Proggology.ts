@@ -31,7 +31,12 @@ class Proggology {
     const numberOfSongs = randomInt(3, 12);
     let songs: any = [];
     for (let i = 0; i < numberOfSongs; i++) {
-      songs.push(magic(this.parser.recursiveslyParse(`[songs]`)));
+      const minutes = randomInt(1, 30);
+      let seconds: any = randomInt(0, 60);
+      if (seconds < 10) {
+        seconds = `0${seconds}`;
+      }
+      songs.push(`${magic(this.parser.recursiveslyParse(`[songs]`))} - ${minutes}:${seconds}`);
     }
     let album;
     if (randomInt(0, 100) > ALBUM_IS_SONG_TITLE) {
