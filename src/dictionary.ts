@@ -10,7 +10,7 @@ const dictionary = {
   songs: [
     '[noun] [numbers]',
     '[noun] and [noun]',
-    '{{A} [noun] for [noun]}',
+    '{A} [noun] for [noun]',
     '[mythologicalNames]\'s [objects]',
     '[regularAdjectives] and [regularAdjectives] [objects]s',
     '[noun] is {a} [regularAdjectives] [noun]',
