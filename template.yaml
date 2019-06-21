@@ -19,8 +19,8 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: SlackHandler
-      CodeUri: src/SlackHandler
-      Handler: index.handler
+      CodeUri: src/slack-handler
+      Handler: dist/lambda.handler
       Runtime: nodejs10.x
       MemorySize: 3008
       Timeout: 30

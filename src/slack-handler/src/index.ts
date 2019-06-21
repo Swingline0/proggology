@@ -1,6 +1,5 @@
 import Express, { json } from 'express';
 import config from './config';
-import router from './router';
 import bodyParser from 'body-parser';
 import init from './router';
 import dotenv from 'dotenv';

@@ -1,0 +1,41 @@
+{
+  "name": "slack-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "parcel build src/index.ts src/test.ts src/lambda.ts --target node --bundle-node-modules -d dist",
+    "develop": "run-p develop:compile develop:watch",
+    "develop:watch": "nodemon --watch dist dist/index.js",
+    "develop:compile": "parcel watch src/index.ts --target node --bundle-node-modules -d dist",
+    "test": "run-p test:compile test:watch",
+    "test:watch": "nodemon --watch dist dist/test.js",
+    "test:compile": "parcel watch src/test.ts --target node --bundle-node-modules -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.27",
+    "@types/dotenv": "^6.1.0",
+    "@types/express": "^4.16.0",
+    "@types/lodash": "^4.14.123",
+    "@types/slack-node": "^0.1.2",
+    "aws-lambda": "^0.1.2",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "ossuary": "^1.1.6",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.2"
+  }
+}

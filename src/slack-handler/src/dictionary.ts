@@ -1,11 +1,14 @@
 const dictionary = {
   artists: [
     'The [regularAdjectives] [noun]',
-    'The [amountNouns] of [noun]s'
+    'The [amountNouns] of [noun]s',
+    'The [regularAdjectives]s'
   ],
   albums: [
     'The [regularAdjectives] [noun]',
-    'The [amountNouns] of [noun]s'
+    'The [amountNouns] of [noun]s',
+    '[prefix][noun]'
+
   ],
   songs: [
     '[noun] [numbers]',
@@ -22,7 +25,8 @@ const dictionary = {
     '[historicalFigures]: [numbers] and [numbers]',
     'The [noun] is [colors]',
     '{A} [amountNouns] of [regularAdjectives] [noun]',
-    '[noun], [regularAdjectives] and [regularAdjectives]'
+    '[noun], [regularAdjectives] and [regularAdjectives]',
+    '[prefix][noun]',
   ],
   exclaim: [
     '!',
@@ -37,6 +41,10 @@ const dictionary = {
     'meta',
     'photo',
     'philo',
+    'flexi',
+    'hydra',
+    'hyper',
+    'quantum'
   ],
   objects: [
     'trumpet',
@@ -61,7 +69,7 @@ const dictionary = {
     'compass',
     'electric guitar',
     'hammer',
-    'halberd'
+    'halberd',
   ],
   noun: [
     '[mythologicalNames|bodyParts|animals|objects]'
@@ -1100,7 +1108,8 @@ const dictionary = {
     'Occular Nerve',
     'Hippocampus',
     'Cerebellum',
-    'Medula Oblongata'
+    'Medula Oblongata',
+    'Xyphoid Process'
   ],
   colors: [
     'Aqua',
@@ -1366,7 +1375,7 @@ const dictionary = {
     "Yak",
     "Zebra"
   ],
-  numbers: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X' ]
+  numbers: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'One', 'Two', 'Duo', 'Deaux', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten' ]
 };
 
 export default dictionary;
