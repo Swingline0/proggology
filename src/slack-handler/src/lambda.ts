@@ -6,7 +6,7 @@ const proggology = new Proggology();
 export async function handler(): Promise<APIGatewayProxyResult> {
   return {
     body: JSON.stringify({
-      text: '```\n' + proggology.getText() + '\n```',
+      text: proggology.getText(),
       response_type: 'in_channel',
       mrkdwn: true
     }),

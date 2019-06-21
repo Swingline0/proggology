@@ -94,7 +94,7 @@ class Proggology {
     //   ARTIST_IS_ALBUM_TITLE, ALBUM_IS_SONG_TITLE, MULTIPART_OMG, numberOfSongs, maxLength
     // });
 
-    return `*Artist:* ${artist}\n*Album:* ${album}\n*Tracklist:*\n${songs.join('\n')}`;
+    return `*Artist:* ${artist}\n*Album:* ${album}\n*Tracklist:*\n${'```\n' + songs.join('\n') + '\n```'}`;
   }
 }
 
