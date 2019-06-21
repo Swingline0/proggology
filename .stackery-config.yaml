@@ -1,5 +1,0 @@
-template-path: ./template.yaml
-stack-name: Proggology
-env-name: proggology
-git-ref: master
-aws-profile: default
